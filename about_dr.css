@@ -1,0 +1,611 @@
+
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .head{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0px;
+            text-align: center;
+            font-size: 18px;
+            z-index: 1000;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #fdfdfd;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-top: 30px; /* Add padding to prevent content from being hidden behind the fixed header */
+        }
+        
+        .header-top {
+            background-color: #d63384; 
+            color: white;
+            text-align: right;
+            padding: 10px 0; 
+            font-size: 14px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            box-shadow: 0 4px 6px rgba(58, 58, 58, 0.266);
+        }
+        
+        .header-container {
+            position: fixed;
+            width: 100%;
+            margin-top: 20px; /* Adjust for the height of the header-top */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 15px 5%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            width: 60px;
+            height: auto;
+            margin-right: 10px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        nav ul li {
+            padding-top: 20px;
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            color: #d63384;
+        }
+        
+        .header-top p {
+            color: #ffffff;
+        }
+        
+        /* Doctor Profile Section */
+        .doctor-profile {
+            
+            margin-block-start: 100px;
+            margin-left: 200px;
+            height: 420px;
+            background-color: #1f4b66; /* Use a color similar to the one in the screenshot */
+            display: flex;
+            align-items: center;
+            color: white; /* Text color */
+        }
+        
+        .profile-container {
+            display: flex;
+            align-items: center;
+            max-width: 800px;
+            padding-left: 100px;
+            margin: 0 auto;
+            padding: 40px; /* Add some padding for better spacing */
+        }
+        
+        .doctor-image img {
+            color: #0099CC;
+            border-radius: 10px; /* Image border */
+            border-color: #0099CC;
+            width: 200px; /* Set width */
+            height: 400px; /* Maintain aspect ratio */
+            margin-right: 100px;
+        }
+        
+        .doctor-info {
+            padding-left: 20px;
+            color: #f0f0f0;
+            max-width: 600px;
+        }
+        
+        .doctor-info h2 {
+            color: #f0f0f0;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        
+        .doctor-info h1 {
+            font-size: 40px;
+            margin: 10px 0;
+        }
+        
+        .highlight {
+            color: #d63384; /* Highlight Color */
+        }
+        
+        .doctor-info p {
+            font-size: 15px;
+            color: #f0f0f0;
+            margin: 5px 0;
+        }
+        
+        .appointment-btn {
+            background-color: #00CFFF; /* Button color */
+            color: white; 
+            padding: 15px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        
+        .appointment-btn:hover {
+            background-color: #0099CC; /* Hover effect for button */
+        }
+
+        /*objective*/
+        .objective {
+            padding: 0px 0%;
+        }
+        
+        .objective-container {
+            width: 100%;
+            color: #000000;
+            height: 150px;
+            background-color: #f0f0f0; /* Light grey background */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Padding inside the container */
+            text-align: center; /* Center the header */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        }
+        
+        .objective-container h2 {
+            font-weight: bold; /* Bold title */
+            margin-bottom: 20px; /* Space below the title */
+        
+        }
+        
+        .objective-container p {
+            font-size: medium;
+            text-align: justify; /* Justify the text */
+            margin: 10; /* Remove default margin */
+            text-align: center;
+        }
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Carousel Container */
+.my-blogs {
+    color: #000000;
+    background-color: #ffffff;
+    height: 650px;
+}
+.my-blogs h2{
+    font-size: 28px;
+}
+.my-blogs p{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.objective1-container {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Carousel Wrapper */
+.carousel-container {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Carousel Track */
+.carousel-wrapper {
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 85%;
+    height: 350px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Carousel Item */
+.carousel-item {
+    width: 140px;
+    padding-top: 20px;
+    flex: 0 0 calc(25% - 30px); /* 4 tiles visible at a time */
+    cursor: pointer;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    height: 310px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+}
+
+/* Tile Content */
+.tile-content img {
+    width: 100%;
+    height: 70%; /* 2/3rd of the tile */
+    border-radius: 8px;
+}
+
+.caption {
+    color: #0099CC;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.caption p{
+    top: 60px;
+    justify-content: left;
+    font-size: 12px;
+}
+/* Carousel Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 24px;
+    z-index: 100;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Background Blur Effect when Modal is Open */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Greyish background */
+    backdrop-filter: blur(8px); /* Blur effect */
+    z-index: 998; /* Below the modal */
+    display: none; /* Hidden by default */
+}
+
+/* Ensure modal is above the overlay */
+.blog-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 999; /* Above the overlay */
+    display: none; /* Hidden by default */
+}
+
+/* Display modal and overlay when active */
+.blog-modal.active,
+.overlay.active {
+    display: block;
+}
+
+.blog-modal .modal-box {
+    max-width: 600px; /* Keep the modal width as required */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    display: flex; /* Align image and text side by side */
+    align-items: flex-start;
+    gap: 15px; /* Space between image and text */
+}
+
+.modal-img {
+    width: 150px; /* Keep the image size as per your layout */
+    height: auto;
+    border-radius: 8px;
+}
+
+.modal-content {
+   left: 200px;
+    flex: 1; /* Allows text area to take remaining space */
+    display: flex;
+    flex-direction: column;
+}
+
+#modal-title {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#modal-caption {
+    color: #000000;
+    width: 100%;
+    max-height: 250px; /* Keep it scrollable if needed */
+    overflow-y: auto;
+    text-align: justify;
+    padding-right: 10px;
+    border-top: 1px solid #ccc;
+}
+
+
+/* Close Button */
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-close:hover {
+    color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-item {
+        flex: 0 0 50%; /* 2 slides visible at a time on smaller screens */
+    }
+
+    .modal-box {
+        width: 90%;
+    }
+}
+
+ /*academics*/ 
+ .academics_cont{
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    width: 100%;
+   
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 30px;
+    top: 0px;
+ }      
+.academics h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0056b3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #0056b3;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+.academics p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 30px;
+}
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card {
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 340px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+    border-left: 5px solid #0056b3;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.card h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #0056b3;
+    font-weight: bold;
+}
+.card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+
+        /*experience details*/
+        .experience-container {
+            background: #1f4b66;
+            padding: 30px;
+            width: 90%;
+            margin: 50px auto;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .experience-details h2 {
+            text-align: center;
+            color: #d63384;
+            font-size: 26px;
+            font-weight: bold;
+            border-bottom: 3px solid #fff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .experience-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .experience-column {
+            flex: 1;
+            min-width: 280px;
+            padding: 10px;
+        }
+        .experience-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        b {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+
+        /*footer*/
+.top-bar {
+    background: black;
+    color: white;
+    padding: 20px 0;
+    height: 150px;
+    position: relative;
+}
+
+/* Container for Layout */
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Logo Styling */
+.brand-logo img {
+    height: 80px; /* Adjust height according to your logo */
+}
+
+/* Navigation Menu */
+.navigation {
+    display: flex;
+    top: 40px;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Styling for Each Navigation Item */
+.nav-item {
+    top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-number {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.email-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+/* Bottom Wave Effect */
+.bottom-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, rgb(208, 0, 139), #ed2876);
+    clip-path: ellipse(60% 100% at 50% 100%);
+}
+
+.center-line {
+    
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 600px;
+    height: 2px; /* Thickness of the line */
+    background-color: black; /* Line color */
+}
